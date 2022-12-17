@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login validation</title>
+</head>
+<body>
+    <h1>GMAIL login</h1>
+     <form>
+     	Email:    <input type="text" id="email" required>
+        password: <input type="password" id="pass" required>
+        <button type="button" id="btn">Login</button>
+     </form>
+     <script type="text/javascript">
+     	var emailEntered = document.getElementById('email');
+     	var passEntered = document.getElementById('pass');
+     	var button = document.getElementById('btn');
+
+
+        button.addEventListener("click", function(){
+        	var email = emailEntered.value;
+        	var password = passEntered.value;
+
+        	var correctEmail = "203120.main@sasi.edu.in";
+        	var correctPass = "7080";
+        	if(email === correctEmail && password === correctPass){
+        		window.open("171222(1).html");
+        	}
+        	else{
+        		alert("wrong password")
+        	}
+        });
+
+     </script>
+</body>
+</html>
